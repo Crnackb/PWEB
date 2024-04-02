@@ -52,13 +52,6 @@ public class OrderItemRepositoryTest extends AbstractIntegrationDBTest{
             .orderItems(null)
             .build();
 
-    Product product2 = Product.builder()
-            .name("pasta")
-            .price((float) 6.0)
-            .stock(260)
-            .orderItems(null)
-            .build();
-
     OrderItem orderItem1 = OrderItem.builder()
                 .order(null)
                 .product(null)

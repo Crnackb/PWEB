@@ -17,7 +17,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     @Query("SELECT p FROM Product p WHERE p.stock > 0")
     List<Product> findProductsInStock();
 
-    @Query("SELECT p FROM Product p WHERE p.price <= ?1 AND p.stock >= ?2")
+    @Query("SELECT p FROM Product p WHERE p.price <= ?1 AND p.stock <= ?2")
     List<Product> findByMaxPriceAndStock(Float price, Integer stock);
 
 }

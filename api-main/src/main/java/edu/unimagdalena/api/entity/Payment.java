@@ -4,10 +4,16 @@ import java.time.LocalDateTime;
 
 import edu.unimagdalena.api.entity.enums.PaymentMethod;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Table(name = "payments")
 public class Payment {
     @Id
